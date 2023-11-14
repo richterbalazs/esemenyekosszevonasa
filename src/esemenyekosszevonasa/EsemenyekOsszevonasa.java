@@ -10,6 +10,10 @@ public class EsemenyekOsszevonasa extends javax.swing.JFrame {
     public EsemenyekOsszevonasa() {
         initComponents();
         osszeg = 0;
+        frissit();
+    }
+
+    private void frissit() {
         jTextField1.setText(osszeg + "Ft");
     }
     
@@ -93,6 +97,8 @@ public class EsemenyekOsszevonasa extends javax.swing.JFrame {
             osszeg += 200;
         }else{
             osszeg -= 200;
+            
+        frissit();
     }
         
         
