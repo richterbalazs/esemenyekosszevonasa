@@ -9,6 +9,8 @@ public class EsemenyekOsszevonasa extends javax.swing.JFrame {
     
     public EsemenyekOsszevonasa() {
         initComponents();
+        osszeg = 0;
+        jTextField1.setText(osszeg + "Ft");
     }
     
     @SuppressWarnings("unchecked")
@@ -93,7 +95,6 @@ public class EsemenyekOsszevonasa extends javax.swing.JFrame {
             osszeg -= 200;
     }
         
-        jTextField1.setText(osszeg + "Ft");
         
     }//GEN-LAST:event_osszesito
 
